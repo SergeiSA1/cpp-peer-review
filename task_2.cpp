@@ -116,10 +116,10 @@ void TestDomain() {
     {
         assert(forbidden_domains.size() == 4);
         {
-            assert(forbidden_domains[0] == read_domains[0]);
-            assert(forbidden_domains[1] == read_domains[1]);
-            assert(forbidden_domains[2] == read_domains[2]);
-            assert(forbidden_domains[3] == read_domains[3]);
+            assert(forbidden_domains[0] == Domain("gdz.ru"));
+            assert(forbidden_domains[1] == Domain("maps.me"));
+            assert(forbidden_domains[2] == Domain("m.gdz.ru"));
+            assert(forbidden_domains[3] == Domain("com"));
         }
         assert(forbidden_domains[0] < read_domains[2]);
         assert(!(forbidden_domains[2] < read_domains[0]));
